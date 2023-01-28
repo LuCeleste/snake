@@ -1,0 +1,73 @@
+$violeta: #070a1b;
+$celeste: #c2d7f3;
+$verde: #9ab697;
+$naranja: #da8686;
+$lila : #b3bce6;
+
+body{
+    background-color: $celeste;
+    font-family: 'Silkscreen', cursive;
+    font-weight: 600;
+
+
+}
+
+
+#board, .boardInfo{
+    margin: auto;
+    max-width: 500px;
+}
+#board{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    border: solid 20px $lila;
+    border-radius: 1rem;
+
+
+}
+#start, .boardInfo{
+    font-size: 2rem;
+    font-family: 'Silkscreen', cursive;
+    color: $celeste;
+
+}
+#gameOver{
+    display: none;
+    margin: auto;
+}
+.boardInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    color: $verde;
+    align-items: center;
+}
+#start{
+    background-color: $naranja;
+    border: none;
+    padding: .25em;
+    border-radius: 1rem;
+}
+#scoreBoard{
+    display: inline-flex;
+}
+.square{
+    aspect-ratio: 1;
+}
+.emptySquare{
+    background-color: $celeste;
+}
+.snakeSquare{
+    background-color: $verde;
+
+
+
+}
+.foodSquare{
+    background-color: $naranja;
+    border-radius: 2rem;
+}
+h1{
+    text-align: center;
+    color: $verde;
+}
